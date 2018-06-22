@@ -1,0 +1,57 @@
+<div class="main-box" >
+  <div class="title" routerLink="../">
+    Welcome to Weather App!
+  </div>
+  <div class="weather">
+    <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Enter the City Name for which you want to find the weather:</p>
+    <div class="input"><input (keyup.enter)="send()" placeholder="City Name" [(ngModel)]="CityName">
+    <button (click)="send()">Submit</button> </div>
+    <div class="output" *ngIf="Weather && Weather[0]">
+      <table>
+        <tr>
+          <th colspan="2">Weather Info</th>
+        </tr>
+        <tr>
+          <span class="fi"><td>City Name</td></span>
+          <span class="in"><td>{{name}}</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Co-Ordinates</td></span>
+          <span class="in"><td>{{Coordinates}}</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Weather</td></span>
+          <span class="in"><td>{{Weather[0].main}}</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Humidity</td></span>
+          <span class="in"><td>{{other.humidity}}%</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Temperature</td></span>
+          <span class="in"><td>{{other.temp}}℃</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Pressure</td></span>
+          <span class="in"><td>{{other.pressure}} hPa</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Wind Speed</td></span>
+          <span class="in"><td>{{Wind.speed}} m/s</td></span>
+        </tr>
+        <tr>
+            <span class="fi"><td>Wind Direction</td></span>
+          <span class="in"><td>{{Wind.deg}} Degrees</td></span>
+        </tr>
+      </table>
+      <!-- <p>City Name = {{name}}</p>
+      <p>Co-ordinates = {{Coordinates}}</p>
+      <p>Weather = {{Weather[0].main}}</p>
+      <p>Humidity = {{other.humidity}}</p>
+      <p>Temperature = {{other.temp}}</p>
+      <p>Pressure = {{other.pressure}}</p>
+      <p>Wind Speed = {{Wind.speed}}</p>
+      <p>Wind Direction = {{Wind.deg}}</p> -->
+    </div>
+  </div>
+</div>

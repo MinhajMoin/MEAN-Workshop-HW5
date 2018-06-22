@@ -1,0 +1,17 @@
+<div class="todo-input">
+  <!-- <input (keyup.enter)="addTodo()" [placeholder]="placholderVal" [(ngModel)]="newTodoVal"> -->
+  <!-- <form class="example-form"> -->
+    <!-- <mat-form-field class="example-full-width">
+      <input matInput placeholder="Favorite food" value="Sushi">
+    </mat-form-field> -->
+  <!-- <button (click)="addTodo()">
+    Add
+  </button> -->
+  <mat-form-field class="example-full-width">
+    <input matInput (keyup.enter)="addTodo()" [placeholder]="placholderVal" [(ngModel)]="newTodoVal">
+  </mat-form-field>
+  <button mat-raised-button (click) = "addTodo()">
+    Add
+  </button>
+  <!-- </form> -->
+</div>

@@ -1,0 +1,11 @@
+
+<div class="users">
+  <div routerLink="../" id = "Header">
+    Users
+  </div>
+  <div class="list">
+    <div class="list-item" *ngFor="let user of users" (click)="showUser(user)">
+      <img class="image" src="{{user.picture.thumbnail}} "><span> </span><span class="entry">{{user.name.first}} {{user.name.last}}</span>
+    </div>
+  </div>
+</div>

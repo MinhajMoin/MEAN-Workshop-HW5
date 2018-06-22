@@ -1,0 +1,9 @@
+<div class="todo-app">
+  <div class="heading" routerLink="../">
+    Welcome to {{title}}
+  </div>
+  <ta-todo-input (todoAdded)="addNewTodo($event)">
+  </ta-todo-input>
+  <ta-todo-list [list]="todoList" (delID)="removeTodo($event)">
+  </ta-todo-list>
+</div>

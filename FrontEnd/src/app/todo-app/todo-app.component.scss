@@ -1,0 +1,19 @@
+.todo-app {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 30px;
+  background: #dcdcdc;
+  border: solid 2px black;}
+
+  .heading {
+    text-align: center;
+    font-size: 32px;
+    background-color: darkblue;
+    color: lavender;
+    padding: 5px;
+    transition: background-color 0.2s linear;
+  }
+  .heading:hover{
+    background-color: lavender;
+    color: darkblue;
+  }

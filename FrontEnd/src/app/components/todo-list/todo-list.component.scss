@@ -1,0 +1,27 @@
+.text{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    animation: add 0.4s ease;
+}
+.btn{
+    // text-align: right;
+    align-self: flex-end;
+    float: right;
+    transition: 1s linear;
+    // height: 40%;
+}
+.btn:active,.text:active{
+    opacity: 0;
+}
+@keyframes add {
+    0% {
+        opacity: 0;
+        // transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        // transform: translateY(0);
+    }
+}
